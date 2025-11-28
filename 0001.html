@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Меню Пиццы</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            padding: 10px;
+        }
+
+        .item {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        .item h2 {
+            margin: 0 0 10px;
+            font-size: 20px;
+        }
+
+        .item .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff4b4b;
+        }
+        .select-btn {
+            width: 100%;
+            margin-top: 10px;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 10px;
+            background: #ff4b4b;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .select-btn:hover {
+            background: #e23838;
+            transform: translateY(-4px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+        }
+
+</style>
+</head>
+<body>
+    <h1>Меню Пиццы</h1>
+
+    <div class="menu">
+        <div class="item">
+            <img src="pizza4.jpg" alt="Маргарита" style="width:100%; border-radius:10px; margin-bottom:10px;">
+            <h2>Маргарита</h2>
+            <div class="price">1500 ₸</div>
+            <button class="select-btn">Выбрать</button>
+        </div>
+            <div class="item">
+            <img src="pizza5.jpg" alt="Пицца 5" style="width:100%; border-radius:10px; margin-bottom:10px;">
+            <h2>Пицца 5</h2>
+            <div class="price">1600 ₸</div>
+            <button class="select-btn">Выбрать</button>
+        </div>
+
+        <div class="item">
+            <img src="pizza6.jpg" alt="Пицца 6" style="width:100%; border-radius:10px; margin-bottom:10px;">
+            <h2>Пицца 6</h2>
+            <div class="price">1900 ₸</div>
+            <button class="select-btn">Выбрать</button>
+        </div>
+
+        <div class="item">
+            <img src="pizza7.jpg" alt="Пицца 7" style="width:100%; border-radius:10px; margin-bottom:10px;">
+            <h2>Пицца 7</h2>
+            <div class="price">2100 ₸</div>
+            <button class="select-btn">Выбрать</button>
+        </div>
+
+        <div class="item">
+            <img src="pizza8.jpg" alt="Пицца 8" style="width:100%; border-radius:10px; margin-bottom:10px;">
+            <h2>Пицца 8</h2>
+            <div class="price">1750 ₸</div>
+            <button class="select-btn">Выбрать</button>
+        </div>
+    </div>
+</body>
+</html>
